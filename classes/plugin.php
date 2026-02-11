@@ -31,7 +31,7 @@ class CWS_PageLinksTo {
 	const DISMISSED_NOTICES = 'page_links_dismissed_options';
 	const MESSAGE_ID = 4;
 	const NEWSLETTER_URL = 'https://pages.convertkit.com/8eb23c1339/1ce4614706';
-	const CSS_JS_VERSION = '3.3.7';
+	const CSS_JS_VERSION = '3.4.0';
 
 	/**
 	 * Whether to replace WP links with their specified URLs.
@@ -108,14 +108,15 @@ class CWS_PageLinksTo {
 
 	/**
 	 * Includes a file (relative to the plugin base path)
-	 * and optionally globalizes a named array passed in.
+	 * and optionally makes data available to the included file.
 	 *
 	 * @param string $file The file to include.
-	 * @param array  $data A named array of data to globalize.
+	 * @param array  $data A named array of data to make available.
 	 * @return void
 	 */
 	public function include_file( $file, $data = array() ) {
-		extract( $data, EXTR_SKIP );
+		// Make data available to the included file without using extract()
+		// The included file can access $data array directly if needed
 		include( $this->get_path() . $file );
 	}
 
