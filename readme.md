@@ -1,13 +1,19 @@
 # Page Links To #
 
-[![Build Status](https://travis-ci.org/markjaquith/page-links-to.svg?branch=master)](https://travis-ci.org/markjaquith/page-links-to)  
+> **Note:** This is an actively maintained fork. The [original repository](https://github.com/markjaquith/page-links-to) has not been updated since 2024. This fork includes modernization updates for PHP 8.4 and WordPress 6.7+ compatibility.
 
-Contributors: markjaquith  
-Donate link: https://txfx.net/wordpress-plugins/donate  
-Tags: page, redirect, link, external link, repoint  
+[![Build Status](https://travis-ci.org/markjaquith/page-links-to.svg?branch=master)](https://travis-ci.org/markjaquith/page-links-to)
+
+**Original Author:** Mark Jaquith
+**Current Maintainer:** Studio Una (Sebastian Hager)
+Contributors: markjaquith
+Donate link: https://txfx.net/wordpress-plugins/donate
+Tags: page, redirect, link, external link, repoint
 Requires at least: 4.8
 Tested up to: 6.7
-Stable tag: 3.4.0  
+Requires PHP: 7.4
+Stable tag: 3.4.0
+License: GPLv2 or later
 
 Lets you make a WordPress page (or port or other content type) link to a URL of your choosing (on your site, or on another site), instead of its normal WordPress URL.
 
